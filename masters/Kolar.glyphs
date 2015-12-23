@@ -513,7 +513,7 @@ value = (
 );
 date = "2015-05-24 21:10:54 +0000";
 designer = "Ramakrishna Saiteja";
-familyName = "Deccan Kannada";
+familyName = "Kolar";
 featurePrefixes = (
 {
 code = "languagesystem knda dflt;\012";
@@ -29436,41 +29436,6 @@ nodes = (
 width = 756;
 }
 );
-},
-{
-color = 6;
-glyphname = NULL;
-lastChange = "2015-12-11 05:04:21 +0000";
-layers = (
-{
-layerId = "5E0B1C78-70A4-47D0-8E94-4E97FBB7DD03";
-name = Light;
-width = 600;
-},
-{
-layerId = UUID0;
-name = Bold;
-width = 600;
-}
-);
-},
-{
-color = 6;
-glyphname = CR;
-lastChange = "2015-12-11 05:04:21 +0000";
-layers = (
-{
-layerId = "5E0B1C78-70A4-47D0-8E94-4E97FBB7DD03";
-name = Light;
-width = 600;
-},
-{
-layerId = UUID0;
-name = Bold;
-width = 600;
-}
-);
-unicode = 000D;
 },
 {
 color = 6;

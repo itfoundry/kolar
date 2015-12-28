@@ -1,0 +1,195 @@
+languagesystem DFLT dflt;
+languagesystem knd2 dflt;
+languagesystem knda dflt;
+
+# include (../../features/GENERATED_classes.fea);
+include (../../features/extension.fea);
+include (../../features/tables.fea);
+include (../../features/lookups.fea);
+
+
+# -------------------
+# BASIC SHAPING FORMS
+# -------------------
+
+# Nukta Forms
+# -----------
+
+# feature nukt {
+# } nukt;
+
+
+# Akhand Ligatures
+# ----------------
+
+feature akhn {
+
+  script DFLT;
+    lookup akhn_new;
+
+  script knd2;
+    lookup akhn_new;
+
+} akhn;
+
+
+# Reph Forms
+# ----------
+
+feature rphf {
+  lookup rphf;
+} rphf;
+
+
+# Below-base Forms
+# ----------------
+
+feature blwf {
+
+  script DFLT;
+    lookup blwf_new;
+
+  script knd2;
+    lookup blwf_new;
+
+  script knda;
+    lookup blwf_old;
+
+} blwf;
+
+
+# ----------------------------
+# MANDATORY PRESENTATION FORMS
+# ----------------------------
+
+# Pre-, Above-, Below-, and Post-base Substitution
+# ------------------------------------------------
+
+feature pres {
+
+  script DFLT;
+
+    lookup pres_nukta;
+    lookup pres_cv;
+
+    lookup pres_cv_new;
+
+    lookup pres_reorder_old; # Adobe
+    lookup pres_cv_old; # Adobe
+
+    lookup pres_variant;
+    lookup pres_c2_ligating;
+    lookup pres_c2_following;
+
+  script knd2;
+
+    lookup pres_nukta;
+    lookup pres_cv;
+
+    lookup pres_cv_new;
+
+    lookup pres_reorder_old; # Adobe
+    lookup pres_cv_old; # Adobe
+
+    lookup pres_variant;
+    lookup pres_c2_ligating;
+    lookup pres_c2_following;
+
+  script knda;
+
+    lookup pres_nukta;
+    lookup pres_cv;
+
+    lookup pres_reorder_old;
+    lookup pres_cv_old;
+
+    lookup pres_variant;
+    lookup pres_c2_ligating;
+    lookup pres_c2_following;
+
+} pres;
+
+# feature abvs {
+# } abvs;
+
+# feature blws {
+# } blws;
+
+# feature psts {
+# } psts;
+
+
+# Halant Forms
+# ------------
+
+feature haln {
+  lookup haln;
+} haln;
+
+
+# Required Contextual Alternates
+# ------------------------------
+
+# feature rclt {
+# } rclt;
+
+
+# --------------------------------
+# DISCRETIONARY PRESENTATION FORMS
+# --------------------------------
+
+# Contextual Alternates
+# ---------------------
+
+# feature calt {
+# } calt;
+
+
+# -----------
+# POSITIONING
+# -----------
+
+# Kerning
+# -------
+
+# feature kern {
+#   include (kern.fea);
+# } kern;
+
+
+# Distances
+# ---------
+
+feature dist {
+  include (kern.fea);
+} dist;
+
+
+# Above- and Below-base Mark Positioning
+# --------------------------------------
+
+include (markclasses.fea);
+
+# feature abvm {
+#   include (abvm.fea);
+# } abvm;
+
+feature blwm {
+  include (blwm.fea);
+} blwm;
+
+
+# ----------------
+# GENERAL FEATURES
+# ----------------
+
+# Discretionary and Historical Ligatures
+# --------------------------------------
+
+# feature dlig {
+#   lookup dlig;
+# } dlig;
+
+# feature hlig {
+#   lookup dlig;
+# } hlig;

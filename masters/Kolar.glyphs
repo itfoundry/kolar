@@ -6876,8 +6876,9 @@ width = 899;
 unicode = 0C94;
 },
 {
+color = 8;
 glyphname = knmAA;
-lastChange = "2015-10-08 10:19:29 +0000";
+lastChange = "2015-12-28 04:48:06 +0000";
 layers = (
 {
 background = {
@@ -7150,8 +7151,9 @@ width = 451;
 unicode = 0CBE;
 },
 {
+color = 10;
 glyphname = knmI;
-lastChange = "2015-10-08 10:19:30 +0000";
+lastChange = "2015-12-28 04:47:49 +0000";
 layers = (
 {
 background = {
@@ -7400,8 +7402,9 @@ width = 443;
 unicode = 0CBF;
 },
 {
+color = 10;
 glyphname = knmII;
-lastChange = "2015-10-08 10:19:29 +0000";
+lastChange = "2015-12-28 04:47:49 +0000";
 layers = (
 {
 background = {
@@ -7806,8 +7809,9 @@ width = 765;
 unicode = 0CC0;
 },
 {
+color = 8;
 glyphname = knmU;
-lastChange = "2015-10-08 10:19:29 +0000";
+lastChange = "2015-12-28 04:48:06 +0000";
 layers = (
 {
 background = {
@@ -7977,8 +7981,9 @@ width = 561;
 unicode = 0CC1;
 },
 {
+color = 8;
 glyphname = knmUU;
-lastChange = "2015-10-12 04:29:20 +0000";
+lastChange = "2015-12-28 04:48:06 +0000";
 layers = (
 {
 background = {
@@ -9084,8 +9089,9 @@ width = 0;
 unicode = 0CE3;
 },
 {
+color = 10;
 glyphname = knmE;
-lastChange = "2015-10-08 10:19:29 +0000";
+lastChange = "2015-12-28 04:47:49 +0000";
 layers = (
 {
 layerId = "5E0B1C78-70A4-47D0-8E94-4E97FBB7DD03";
@@ -9244,8 +9250,9 @@ width = 656;
 unicode = 0CC6;
 },
 {
+color = 10;
 glyphname = knmEE;
-lastChange = "2015-10-08 10:19:29 +0000";
+lastChange = "2015-12-28 04:47:49 +0000";
 layers = (
 {
 layerId = "5E0B1C78-70A4-47D0-8E94-4E97FBB7DD03";
@@ -9463,8 +9470,9 @@ width = 982;
 unicode = 0CC7;
 },
 {
+color = 10;
 glyphname = knmAI;
-lastChange = "2015-10-08 10:19:29 +0000";
+lastChange = "2015-12-28 04:47:49 +0000";
 layers = (
 {
 layerId = "5E0B1C78-70A4-47D0-8E94-4E97FBB7DD03";
@@ -9738,8 +9746,9 @@ width = 817;
 unicode = 0CC8;
 },
 {
+color = 10;
 glyphname = knmO;
-lastChange = "2015-10-08 10:19:29 +0000";
+lastChange = "2015-12-28 04:47:49 +0000";
 layers = (
 {
 background = {
@@ -10223,8 +10232,9 @@ width = 1335;
 unicode = 0CCA;
 },
 {
+color = 10;
 glyphname = knmOO;
-lastChange = "2015-10-08 10:19:29 +0000";
+lastChange = "2015-12-28 04:47:49 +0000";
 layers = (
 {
 background = {
@@ -10910,8 +10920,9 @@ width = 1738;
 unicode = 0CCB;
 },
 {
+color = 8;
 glyphname = knmAU;
-lastChange = "2015-10-08 10:19:29 +0000";
+lastChange = "2015-12-28 04:48:06 +0000";
 layers = (
 {
 background = {
@@ -11205,8 +11216,9 @@ width = 301;
 unicode = 0CCC;
 },
 {
+color = 8;
 glyphname = knLengthmark;
-lastChange = "2015-10-08 10:19:29 +0000";
+lastChange = "2015-12-28 04:48:06 +0000";
 layers = (
 {
 associatedMasterId = "5E0B1C78-70A4-47D0-8E94-4E97FBB7DD03";
@@ -11512,8 +11524,9 @@ visible = 1;
 unicode = 0CD5;
 },
 {
+color = 8;
 glyphname = knAIlengthmark;
-lastChange = "2015-10-08 10:19:29 +0000";
+lastChange = "2015-12-28 04:48:06 +0000";
 layers = (
 {
 background = {
@@ -26513,8 +26526,9 @@ width = 892;
 unicode = 0CDE;
 },
 {
+color = 8;
 glyphname = knAnusvara;
-lastChange = "2015-10-08 10:19:29 +0000";
+lastChange = "2015-12-28 04:50:09 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -26601,8 +26615,9 @@ width = 692;
 );
 },
 {
+color = 8;
 glyphname = knCandrabindu;
-lastChange = "2015-10-08 10:19:29 +0000";
+lastChange = "2015-12-28 04:50:09 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -26714,8 +26729,9 @@ width = 0;
 unicode = 0C81;
 },
 {
+color = 8;
 glyphname = knVisarga;
-lastChange = "2015-10-08 10:19:29 +0000";
+lastChange = "2015-12-28 04:50:09 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -26871,8 +26887,9 @@ width = 370;
 unicode = 0C83;
 },
 {
+color = 10;
 glyphname = knVirama;
-lastChange = "2015-10-13 10:26:19 +0000";
+lastChange = "2015-12-28 04:49:55 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -27133,8 +27150,9 @@ width = 416;
 unicode = 0CBC;
 },
 {
+color = 1;
 glyphname = knAvagraha;
-lastChange = "2015-10-08 10:19:29 +0000";
+lastChange = "2015-12-28 04:49:50 +0000";
 layers = (
 {
 background = {

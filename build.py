@@ -13,9 +13,9 @@ family = kit.Family(
 
 family.set_masters(
     modules = [
-        'kerning',
-        'mark_positioning',
-        'mark_to_mark_positioning',
+        # 'kerning',
+        # 'mark_positioning',
+        # 'mark_to_mark_positioning',
         # 'devanagari_matra_i_variants',
     ],
 )

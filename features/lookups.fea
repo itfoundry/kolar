@@ -1,10 +1,10 @@
 # Akhand Ligatures
 # ----------------
 
-lookup akhn_new {
-  sub knKA knVirama knSSA by knKSSA;
-  sub knJA knVirama knNYA by knJNYA;
-} akhn_new;
+# lookup akhn_new {
+#   sub knKA knVirama knSSA by knKSSA;
+#   sub knJA knVirama knNYA by knJNYA;
+# } akhn_new;
 
 # lookup akhn_jihvamuliya_and_upadhmaniya_A {
 #
@@ -76,8 +76,8 @@ lookup blwf_new {
   sub knVirama knLLA by knLLAc2;
   sub knVirama knLLLA by knLLLAc2;
 
-  sub knVirama knKSSA by knKSSAc2;
-  sub knVirama knJNYA by knJNYAc2;
+  # sub knVirama knKSSA by knKSSAc2;
+  # sub knVirama knJNYA by knJNYAc2;
 
 } blwf_new;
 
@@ -126,9 +126,9 @@ lookup blwf_old {
 # Pre-, Above-, Below-, and Post-base Substitution
 # ------------------------------------------------
 
-lookup pres_nukta {
-  sub knPHA knNukta' by knNukta.pha;
-} pres_nukta;
+# lookup pres_nukta {
+#   sub knPHA knNukta' by knNukta.pha;
+# } pres_nukta;
 
 lookup pres_cv {
 
@@ -397,153 +397,153 @@ lookup pres_cv {
 
 } pres_cv;
 
-lookup pres_cv_new {
+# lookup pres_cv_new {
+#
+#   sub knKSSA knmI by knKSSI;
+#   sub knJNYA knmI by knJNYI;
+#
+#   sub knKSSA knmE by knKSSE;
+#   sub knJNYA knmE by knJNYE;
+#
+# } pres_cv_new;
 
-  sub knKSSA knmI by knKSSI;
-  sub knJNYA knmI by knJNYI;
+# @matra = [knmAA knmU knmUU knmAU];
+#
+# @ka = [knKA knKE];
+# @ja = [knJA knJE];
+#
+# lookup CONTEXTUAL_to_c2 {
+#   sub @matra' knSSAc2 by knSSAc2;
+#   sub @matra' knNYAc2 by knNYAc2;
+# } CONTEXTUAL_to_c2;
+#
+# lookup CONTEXTUAL_to_matra_aa {
+#   sub knSSAc2' by knmAA;
+#   sub knNYAc2' by knmAA;
+# } CONTEXTUAL_to_matra_aa;
+#
+# lookup CONTEXTUAL_to_matra_u {
+#   sub knSSAc2' by knmU;
+#   sub knNYAc2' by knmU;
+# } CONTEXTUAL_to_matra_u;
+#
+# lookup CONTEXTUAL_to_matra_uu {
+#   sub knSSAc2' by knmUU;
+#   sub knNYAc2' by knmUU;
+# } CONTEXTUAL_to_matra_uu;
+#
+# lookup CONTEXTUAL_to_matra_au {
+#   sub knSSAc2' by knmAU;
+#   sub knNYAc2' by knmAU;
+# } CONTEXTUAL_to_matra_au;
+#
+# lookup pres_reorder_old {
+#
+#   sub
+#     @ka
+#     knmAA' lookup CONTEXTUAL_to_c2
+#     knSSAc2' lookup CONTEXTUAL_to_matra_aa;
+#   sub
+#     @ka
+#     knmU' lookup CONTEXTUAL_to_c2
+#     knSSAc2' lookup CONTEXTUAL_to_matra_u;
+#   sub
+#     @ka
+#     knmUU' lookup CONTEXTUAL_to_c2
+#     knSSAc2' lookup CONTEXTUAL_to_matra_uu;
+#   sub
+#     @ka
+#     knmAU' lookup CONTEXTUAL_to_c2
+#     knSSAc2' lookup CONTEXTUAL_to_matra_au;
+#
+#   sub
+#     @ja
+#     knmAA' lookup CONTEXTUAL_to_c2
+#     knNYAc2' lookup CONTEXTUAL_to_matra_aa;
+#   sub
+#     @ja
+#     knmU' lookup CONTEXTUAL_to_c2
+#     knNYAc2' lookup CONTEXTUAL_to_matra_u;
+#   sub
+#     @ja
+#     knmUU' lookup CONTEXTUAL_to_c2
+#     knNYAc2' lookup CONTEXTUAL_to_matra_uu;
+#   sub
+#     @ja
+#     knmAU' lookup CONTEXTUAL_to_c2
+#     knNYAc2' lookup CONTEXTUAL_to_matra_au;
+#
+# } pres_reorder_old;
 
-  sub knKSSA knmE by knKSSE;
-  sub knJNYA knmE by knJNYE;
+# lookup pres_cv_old {
+#
+#   # "akhn_new"
+#
+#   sub knKA knSSAc2 by knKSSA;
+#   sub knJA knNYAc2 by knJNYA;
+#
+#   # "blwf_new"
+#
+#   sub knKAc2 knSSAc2 by knKSSAc2;
+#   sub knJAc2 knNYAc2 by knJNYAc2;
+#
+#   # "pres_cv_new"
+#
+#   sub knKI knSSAc2 by knKSSI;
+#   sub knKE knSSAc2 by knKSSE;
+#   sub knJI knNYAc2 by knJNYI;
+#   sub knJE knNYAc2 by knJNYE;
+#
+# } pres_cv_old;
 
-} pres_cv_new;
+# lookup pres_variant {
+#
+#   lookupflag IgnoreMarks; # for Nukta
+#
+#   sub @CONSONANTS' [knmAA knmAU] by @CONSONANTS.base;
+#
+#   sub
+#     [knNGA.base knNYA.base knRRA.base knLLLA.base]
+#     [knmAA knmAU]'
+#   by
+#     [knmAA.nga knmAU.nga];
+#
+#   lookupflag 0;
+#
+# } pres_variant;
 
-@matra = [knmAA knmU knmUU knmAU];
+# lookup pres_c2_ligating {
+#
+#   sub knTAc2 knmvR by knTAc2_mvR;
+#   sub knTAc2 knAIlengthmark by knTAc2_AIlengthmark;
+#   sub knTAc2 knYAc2 by knTAc2_YAc2;
+#
+#   sub knKAc2  knRAc2 by knKAc2_RAc2;
+#   sub knGAc2  knRAc2 by knGAc2_RAc2;
+#   sub knTTAc2 knRAc2 by knTTAc2_RAc2;
+#   sub knDDAc2 knRAc2 by knDDAc2_RAc2;
+#   sub knTAc2  knRAc2 by knTAc2_RAc2;
+#   sub knDAc2  knRAc2 by knDAc2_RAc2;
+#   sub knPAc2  knRAc2 by knPAc2_RAc2;
+#   sub knBAc2  knRAc2 by knBAc2_RAc2;
+#
+# } pres_c2_ligating;
 
-@ka = [knKA knKE];
-@ja = [knJA knJE];
-
-lookup CONTEXTUAL_to_c2 {
-  sub @matra' knSSAc2 by knSSAc2;
-  sub @matra' knNYAc2 by knNYAc2;
-} CONTEXTUAL_to_c2;
-
-lookup CONTEXTUAL_to_matra_aa {
-  sub knSSAc2' by knmAA;
-  sub knNYAc2' by knmAA;
-} CONTEXTUAL_to_matra_aa;
-
-lookup CONTEXTUAL_to_matra_u {
-  sub knSSAc2' by knmU;
-  sub knNYAc2' by knmU;
-} CONTEXTUAL_to_matra_u;
-
-lookup CONTEXTUAL_to_matra_uu {
-  sub knSSAc2' by knmUU;
-  sub knNYAc2' by knmUU;
-} CONTEXTUAL_to_matra_uu;
-
-lookup CONTEXTUAL_to_matra_au {
-  sub knSSAc2' by knmAU;
-  sub knNYAc2' by knmAU;
-} CONTEXTUAL_to_matra_au;
-
-lookup pres_reorder_old {
-
-  sub
-    @ka
-    knmAA' lookup CONTEXTUAL_to_c2
-    knSSAc2' lookup CONTEXTUAL_to_matra_aa;
-  sub
-    @ka
-    knmU' lookup CONTEXTUAL_to_c2
-    knSSAc2' lookup CONTEXTUAL_to_matra_u;
-  sub
-    @ka
-    knmUU' lookup CONTEXTUAL_to_c2
-    knSSAc2' lookup CONTEXTUAL_to_matra_uu;
-  sub
-    @ka
-    knmAU' lookup CONTEXTUAL_to_c2
-    knSSAc2' lookup CONTEXTUAL_to_matra_au;
-
-  sub
-    @ja
-    knmAA' lookup CONTEXTUAL_to_c2
-    knNYAc2' lookup CONTEXTUAL_to_matra_aa;
-  sub
-    @ja
-    knmU' lookup CONTEXTUAL_to_c2
-    knNYAc2' lookup CONTEXTUAL_to_matra_u;
-  sub
-    @ja
-    knmUU' lookup CONTEXTUAL_to_c2
-    knNYAc2' lookup CONTEXTUAL_to_matra_uu;
-  sub
-    @ja
-    knmAU' lookup CONTEXTUAL_to_c2
-    knNYAc2' lookup CONTEXTUAL_to_matra_au;
-
-} pres_reorder_old;
-
-lookup pres_cv_old {
-
-  # "akhn_new"
-
-  sub knKA knSSAc2 by knKSSA;
-  sub knJA knNYAc2 by knJNYA;
-
-  # "blwf_new"
-
-  sub knKAc2 knSSAc2 by knKSSAc2;
-  sub knJAc2 knNYAc2 by knJNYAc2;
-
-  # "pres_cv_new"
-
-  sub knKI knSSAc2 by knKSSI;
-  sub knKE knSSAc2 by knKSSE;
-  sub knJI knNYAc2 by knJNYI;
-  sub knJE knNYAc2 by knJNYE;
-
-} pres_cv_old;
-
-lookup pres_variant {
-
-  lookupflag IgnoreMarks; # for Nukta
-
-  sub @CONSONANTS' [knmAA knmAU] by @CONSONANTS.base;
-
-  sub
-    [knNGA.base knNYA.base knRRA.base knLLLA.base]
-    [knmAA knmAU]'
-  by
-    [knmAA.nga knmAU.nga];
-
-  lookupflag 0;
-
-} pres_variant;
-
-lookup pres_c2_ligating {
-
-  sub knTAc2 knmvR by knTAc2_mvR;
-  sub knTAc2 knAIlengthmark by knTAc2_AIlengthmark;
-  sub knTAc2 knYAc2 by knTAc2_YAc2;
-
-  sub knKAc2  knRAc2 by knKAc2_RAc2;
-  sub knGAc2  knRAc2 by knGAc2_RAc2;
-  sub knTTAc2 knRAc2 by knTTAc2_RAc2;
-  sub knDDAc2 knRAc2 by knDDAc2_RAc2;
-  sub knTAc2  knRAc2 by knTAc2_RAc2;
-  sub knDAc2  knRAc2 by knDAc2_RAc2;
-  sub knPAc2  knRAc2 by knPAc2_RAc2;
-  sub knBAc2  knRAc2 by knBAc2_RAc2;
-
-} pres_c2_ligating;
-
-lookup pres_c2_following {
-
-  ignore sub [knKSSA knJNYA] @C2' knVirama;
-
-  sub
-    [
-      @C2 @C2.following
-      knKSSA knKSSI knKSSE
-      knJNYA knJNYI knJNYE
-    ]
-    [@C2 @else]'
-  by
-    [@C2.following @else.following];
-
-} pres_c2_following;
+# lookup pres_c2_following {
+#
+#   ignore sub [knKSSA knJNYA] @C2' knVirama;
+#
+#   sub
+#     [
+#       @C2 @C2.following
+#       knKSSA knKSSI knKSSE
+#       knJNYA knJNYI knJNYE
+#     ]
+#     [@C2 @else]'
+#   by
+#     [@C2.following @else.following];
+#
+# } pres_c2_following;
 
 
 # Halant Forms
@@ -590,8 +590,8 @@ lookup haln {
   sub knLLA knVirama by knLL;
   sub knLLLA knVirama by knLLL;
 
-  sub knKSSA knVirama by knKSS;
-  sub knJNYA knVirama by knJNY;
+  # sub knKSSA knVirama by knKSS;
+  # sub knJNYA knVirama by knJNY;
 
   lookupflag 0;
 

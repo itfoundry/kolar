@@ -22,15 +22,15 @@ include (../../features/lookups.fea);
 # Akhand Ligatures
 # ----------------
 
-feature akhn {
-
-  script DFLT;
-    lookup akhn_new;
-
-  script knd2;
-    lookup akhn_new;
-
-} akhn;
+# feature akhn {
+#
+#   script DFLT;
+#     lookup akhn_new;
+#
+#   script knd2;
+#     lookup akhn_new;
+#
+# } akhn;
 
 
 # Reph Forms
@@ -69,43 +69,43 @@ feature pres {
 
   script DFLT;
 
-    lookup pres_nukta;
+    # lookup pres_nukta;
     lookup pres_cv;
 
-    lookup pres_cv_new;
+    # lookup pres_cv_new;
 
-    lookup pres_reorder_old; # Adobe
-    lookup pres_cv_old; # Adobe
+    # lookup pres_reorder_old; # Adobe
+    # lookup pres_cv_old; # Adobe
 
-    lookup pres_variant;
-    lookup pres_c2_ligating;
-    lookup pres_c2_following;
+    # lookup pres_variant;
+    # lookup pres_c2_ligating;
+    # lookup pres_c2_following;
 
   script knd2;
 
-    lookup pres_nukta;
+    # lookup pres_nukta;
     lookup pres_cv;
 
-    lookup pres_cv_new;
+    # lookup pres_cv_new;
 
-    lookup pres_reorder_old; # Adobe
-    lookup pres_cv_old; # Adobe
+    # lookup pres_reorder_old; # Adobe
+    # lookup pres_cv_old; # Adobe
 
-    lookup pres_variant;
-    lookup pres_c2_ligating;
-    lookup pres_c2_following;
+    # lookup pres_variant;
+    # lookup pres_c2_ligating;
+    # lookup pres_c2_following;
 
   script knda;
 
-    lookup pres_nukta;
+    # lookup pres_nukta;
     lookup pres_cv;
 
-    lookup pres_reorder_old;
-    lookup pres_cv_old;
+    # lookup pres_reorder_old;
+    # lookup pres_cv_old;
 
-    lookup pres_variant;
-    lookup pres_c2_ligating;
-    lookup pres_c2_following;
+    # lookup pres_variant;
+    # lookup pres_c2_ligating;
+    # lookup pres_c2_following;
 
 } pres;
 
@@ -160,23 +160,23 @@ feature haln {
 # Distances
 # ---------
 
-feature dist {
-  include (kern.fea);
-} dist;
+# feature dist {
+#   include (kern.fea);
+# } dist;
 
 
 # Above- and Below-base Mark Positioning
 # --------------------------------------
 
-include (markclasses.fea);
-
+# include (markclasses.fea);
+#
 # feature abvm {
 #   include (abvm.fea);
 # } abvm;
-
-feature blwm {
-  include (blwm.fea);
-} blwm;
+#
+# feature blwm {
+#   include (blwm.fea);
+# } blwm;
 
 
 # ----------------

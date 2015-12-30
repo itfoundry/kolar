@@ -1,9 +1,6 @@
 #! /usr/bin/env python
 
 import hindkit as kit
-kit.confirm_version('0.3.2')
-
-# - - -
 
 family = kit.Family(
     trademark = 'Kolar',
@@ -21,8 +18,6 @@ family.set_masters(
 )
 
 family.set_styles()
-
-# - - -
 
 builder = kit.Builder(family)
 
@@ -47,5 +42,15 @@ builder.set_options([
 
 builder.generate_designspace()
 builder.generate_fmndb()
+
+# builder.import_glyphs(
+#     from_dir = 'latin',
+#     to_dir = 'kannada',
+#     excluding = '''
+#         space
+#         CR NULL
+#     '''.split(),
+#     # deriving = 'CR NULL'.split(),
+# )
 
 builder.build()

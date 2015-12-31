@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="hungarumlaut.cap" format="1">
+  <advance width="459"/>
+  <outline>
+    <contour>
+      <point x="80" y="780" type="line"/>
+      <point x="176" y="806" type="line"/>
+      <point x="227" y="820"/>
+      <point x="251" y="834"/>
+      <point x="251" y="857" type="curve" smooth="yes"/>
+      <point x="251" y="878"/>
+      <point x="235" y="890"/>
+      <point x="208" y="890" type="curve" smooth="yes"/>
+      <point x="179" y="890"/>
+      <point x="152" y="881"/>
+      <point x="124" y="860" type="curve" smooth="yes"/>
+      <point x="18" y="780" type="line"/>
+    </contour>
+    <contour>
+      <point x="269" y="780" type="line"/>
+      <point x="365" y="806" type="line"/>
+      <point x="417" y="820"/>
+      <point x="440" y="834"/>
+      <point x="440" y="857" type="curve" smooth="yes"/>
+      <point x="440" y="878"/>
+      <point x="424" y="890"/>
+      <point x="397" y="890" type="curve" smooth="yes"/>
+      <point x="369" y="890"/>
+      <point x="341" y="881"/>
+      <point x="313" y="860" type="curve" smooth="yes"/>
+      <point x="207" y="780" type="line"/>
+    </contour>
+    <contour>
+      <point x="195" y="770" type="move" name="_topcap"/>
+    </contour>
+  </outline>
+</glyph>

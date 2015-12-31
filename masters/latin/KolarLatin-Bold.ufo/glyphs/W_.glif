@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="W" format="1">
+  <advance width="1299"/>
+  <unicode hex="0057"/>
+  <outline>
+    <contour>
+      <point x="817" y="533" type="line" smooth="yes"/>
+      <point x="807" y="563"/>
+      <point x="803" y="586"/>
+      <point x="803" y="606" type="curve" smooth="yes"/>
+      <point x="803" y="649"/>
+      <point x="828" y="659"/>
+      <point x="871" y="659" type="curve"/>
+      <point x="871" y="700" type="line"/>
+      <point x="510" y="700" type="line"/>
+      <point x="510" y="659" type="line"/>
+      <point x="572.354494419" y="650.866805076"/>
+      <point x="586.316631347" y="636.232337599"/>
+      <point x="602" y="585" type="curve"/>
+      <point x="456" y="220" type="line"/>
+      <point x="349" y="525" type="line" smooth="yes"/>
+      <point x="326" y="592"/>
+      <point x="320" y="609"/>
+      <point x="320" y="622" type="curve" smooth="yes"/>
+      <point x="320" y="647"/>
+      <point x="336" y="659"/>
+      <point x="400" y="659" type="curve"/>
+      <point x="400" y="700" type="line"/>
+      <point x="-5" y="700" type="line"/>
+      <point x="-5" y="659" type="line"/>
+      <point x="56" y="659"/>
+      <point x="86" y="652"/>
+      <point x="140" y="517" type="curve" smooth="yes"/>
+      <point x="352" y="-9" type="line"/>
+      <point x="455" y="-9" type="line"/>
+      <point x="641" y="440" type="line"/>
+      <point x="817" y="-9" type="line"/>
+      <point x="927" y="-9" type="line"/>
+      <point x="1162" y="583" type="line" smooth="yes"/>
+      <point x="1185" y="640"/>
+      <point x="1218" y="660"/>
+      <point x="1270" y="660" type="curve"/>
+      <point x="1270" y="700" type="line"/>
+      <point x="984" y="700" type="line"/>
+      <point x="984" y="660" type="line"/>
+      <point x="1041" y="660"/>
+      <point x="1066" y="648"/>
+      <point x="1066" y="613" type="curve" smooth="yes"/>
+      <point x="1066.0" y="591.034482759"/>
+      <point x="1060.61345551" y="561.033638769"/>
+      <point x="1045" y="522" type="curve" smooth="yes"/>
+      <point x="925" y="222" type="line"/>
+    </contour>
+    <contour>
+      <point x="635.0" y="795.0" type="move" name="topcap"/>
+    </contour>
+  </outline>
+</glyph>

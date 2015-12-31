@@ -21,7 +21,7 @@ family.set_styles()
 
 builder = kit.Builder(family)
 
-builder.fontrevision = '0.200'
+builder.fontrevision = '0.201'
 
 builder.set_options([
 
@@ -43,14 +43,14 @@ builder.set_options([
 builder.generate_designspace()
 builder.generate_fmndb()
 
-hindkit.builder.import_glyphs(
+builder.import_glyphs(
     from_masters = [
         'masters/latin/KolarLatin-Light.ufo',
         'masters/latin/KolarLatin-Bold.ufo',
     ],
     to_masters = [
-        'masters/gurmukhi/Kolar Kannada-Light.ufo',
-        'masters/gurmukhi/Kolar Kannada-Bold.ufo',
+        'masters/kannada/Kolar Kannada-Light.ufo',
+        'masters/kannada/Kolar Kannada-Bold.ufo',
     ],
     save_to_masters = [
         'masters/Kolar-Light.ufo',

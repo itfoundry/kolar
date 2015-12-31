@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#! /usr/bin/env AFDKOPython
 
 import hindkit as kit
 
@@ -30,7 +30,7 @@ builder.set_options([
     'compile',          # stage iii
 
     'makeinstances', #!
-    'checkoutlines', #!
+    # 'checkoutlines', #!
     # 'autohint',      #!
 
     'do_style_linking',
@@ -43,14 +43,21 @@ builder.set_options([
 builder.generate_designspace()
 builder.generate_fmndb()
 
-# builder.import_glyphs(
-#     from_dir = 'latin',
-#     to_dir = 'kannada',
-#     excluding = '''
-#         space
-#         CR NULL
-#     '''.split(),
-#     # deriving = 'CR NULL'.split(),
-# )
+hindkit.builder.import_glyphs(
+    from_masters = [
+        'masters/latin/KolarLatin-Light.ufo',
+        'masters/latin/KolarLatin-Bold.ufo',
+    ],
+    to_masters = [
+        'masters/gurmukhi/Kolar Kannada-Light.ufo',
+        'masters/gurmukhi/Kolar Kannada-Bold.ufo',
+    ],
+    save_to_masters = [
+        'masters/Kolar-Light.ufo',
+        'masters/Kolar-Bold.ufo',
+    ],
+    excluding_names = 'space CR NULL'.split(),
+    deriving_names = 'CR NULL'.split(),
+)
 
 builder.build()

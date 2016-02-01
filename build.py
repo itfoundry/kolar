@@ -30,7 +30,7 @@ builder = kit.Builder(
         'LineGap': 200,
     },
     options = {
-        'prep_mark_positioning': True,
+        # 'prep_mark_positioning': True,
         'override_GDEF': True,
         'do_style_linking': True,
     },

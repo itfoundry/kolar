@@ -23,7 +23,7 @@ family.set_styles(
 
 builder = kit.Builder(
     family,
-    fontrevision = '0.201',
+    fontrevision = '0.900',
     vertical_metrics = {
         'Ascender': 750,
         'Descender': -250,

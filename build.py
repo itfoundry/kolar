@@ -5,10 +5,11 @@ import hindkit as kit
 
 family = kit.Family(
     client = 'Google Fonts',
-    script = 'Kannada',
     trademark = 'Kolar',
-    designers = 'Ramakrishna Saiteja (Kannada); Shiva Nallaperumal (Latin)',
+    script = 'Kannada',
 )
+family.info.openTypeNameDesigner = "Ramakrishna Saiteja (Kannada); Shiva Nallaperumal (Latin)"
+
 family.set_masters()
 family.set_styles(
     style_scheme = [
@@ -21,13 +22,24 @@ family.set_styles(
     ],
 )
 
+def prepare_master(self, master):
+    master.import_glyphs_from(
+        source_dir = 'masters/Latin/',
+        target_dir = 'masters/Kannada/',
+        excluding_names = 'space NULL CR'.split(),
+    )
+    master.derive_glyphs('NULL CR'.split())
+
+kit.Builder.prepare_master = prepare_master
+
 builder = kit.Builder(
     family,
-    fontrevision = '0.900',
+    fontrevision = '1.000',
     vertical_metrics = {
-        'Ascender': 750,
-        'Descender': -250,
-        'LineGap': 200,
+        'Ascender': 1050,
+        'Descender': -450,
+        'TypoAscender': 800,
+        'TypoDescender': -200,
     },
     options = {
         # 'prep_mark_positioning': True,
@@ -35,22 +47,4 @@ builder = kit.Builder(
         'do_style_linking': True,
     },
 )
-
-kit.tools.import_glyphs(
-    source_paths = [
-        'masters/latin/Kolar Latin-Light.ufo',
-        'masters/latin/Kolar Latin-Bold.ufo',
-    ],
-    target_paths = [
-        'masters/kannada/Kolar Kannada-Light.ufo',
-        'masters/kannada/Kolar Kannada-Bold.ufo',
-    ],
-    save_as_paths = [
-        'masters/Kolar-Light.ufo',
-        'masters/Kolar-Bold.ufo',
-    ],
-    excluding_names = 'space CR NULL'.split(),
-    deriving_names = 'CR NULL'.split(),
-)
-
 builder.build()

@@ -1,0 +1,5 @@
+Kolar is a multi-script OpenSource family of typefaces intended to support the publishing of long texts for immersive reading written in Kannada or a language that uses the Latin script. Five fonts are available: Light, Regular, Medium, SemiBold, and Bold. Each font’s character set includes 925 glyphs. This massive range supports hundreds of unique Kannada-script conjuncts.
+
+Kolar’s Latin-script characters are all modified from Pablo Impallari’s Libre Baskerville series. Those fonts were optimised for 16px-high web body text; Kolar’s Kannada characters follow the irlead. Libre Baskerville is an excellent match for the Kannada script, because – like John Baskerville’s 18th century type – typographically-formed letters for Kannada text are almost always drawn with a high amount of vertical contrast. The horizontal elements along the bottoms of the letters in Kolar are very heavy, as may be expected.
+
+Ramakrishna Saiteja designed Kolar’s Kannada character set for the Indian Type Foundry, who first published the Kolar fonts in 2016.

@@ -7,7 +7,7 @@ def generate(self):
     self.import_glyphs_from(
         source_dir = 'masters/Latin/',
         target_dir = 'masters/Kannada/',
-        excluding_names = 'space NULL CR'.split(),
+        excluding_names = 'space NULL CR apostrophe'.split(),
     )
     self.derive_glyphs('NULL CR'.split())
 

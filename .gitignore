@@ -1,6 +1,6 @@
 *.ufo
 *(Autosaved).glyphs
 
-/temp/
+/intermediates/
 
 !/masters/Latin/*.ufo

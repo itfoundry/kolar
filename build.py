@@ -39,7 +39,7 @@ family.set_styles([
 
 project = kit.Project(
     family,
-    fontrevision = '1.000',
+    fontrevision = '1.001',
     options = {
         # 'prep_mark_positioning': True,
         'do_style_linking': True,

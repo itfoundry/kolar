@@ -17,12 +17,13 @@ kit.Master.generate = generate
 
 family = kit.Family(
     client = 'Google Fonts',
-    trademark = 'Kolar',
+    base_name = 'Kolar',
     script = 'Kannada',
 )
 
-family.info.openTypeNameDesigner = "Ramakrishna Saiteja (Kannada); Shiva Nallaperumal (Latin)"
-family.info.openTypeHheaAscender, family.info.openTypeHheaDescender = (1050, -750)
+i = family.info
+i.openTypeNameDesigner = "Ramakrishna Saiteja (Kannada); Shiva Nallaperumal (Latin)"
+i.openTypeHheaAscender, i.openTypeHheaDescender = (1050, -750)
 
 family.set_masters()
 family.set_styles([

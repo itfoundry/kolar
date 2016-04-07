@@ -22,7 +22,7 @@ family = kit.Family(
 )
 
 family.info.openTypeNameDesigner = "Ramakrishna Saiteja (Kannada); Shiva Nallaperumal (Latin)"
-family.info.openTypeHheaAscender, family.info.openTypeHheaDescender = (1050, -450)
+family.info.openTypeHheaAscender, family.info.openTypeHheaDescender = (1050, -750)
 
 family.set_masters()
 family.set_styles([
